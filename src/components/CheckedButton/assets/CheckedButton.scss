@@ -1,0 +1,39 @@
+.success-button {
+  min-width: 120px;
+  height: 40px;
+  outline: 0;
+  border-radius: 6px;
+  color: white;
+  background-color: $success-color;
+  font-weight: 700;
+  border: 0;
+  transition: .6s;
+  cursor: pointer;
+  margin-left: 15px;
+  &:hover {
+    background-color: $main-dark;
+  }
+  &__icon {
+    width: 24px;
+    height: 24px;
+  }
+  svg * {
+    transition: .6s;
+  }
+  &--checked {
+    background: none;
+    color: $success-color;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 12px;
+    border: 3px solid $success-color;
+    path {
+      fill: $success-color;
+    }
+    &:hover {
+      border: 3px solid transparent;
+      background: none;
+    }
+  }
+}
